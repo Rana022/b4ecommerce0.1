@@ -1,0 +1,346 @@
+*{
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p, ul, h5,h3{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body a:hover{
+    text-decoration: none;
+}
+.nav-container{
+    min-height: 124px;
+}
+.sina-nav{
+    top: 40px;
+    position: absolute;
+}
+.sina-nav.navbar-transparent{
+    background: rgba(255, 255, 255, 0.2);
+}
+.mt50{
+    margin-top: 50px;
+}
+.active{
+    color: #00c8c8!important;
+}
+
+/* custom css */
+#topNav{
+    background-color: #333333;
+    color: #858585;
+    height: 45px;
+    font-size: 13px;
+}
+
+#topNav ul li{
+    display: inline;
+}
+#topNav ul li a {
+    text-transform: capitalize;
+}
+#topNav ul li:hover{
+    background-color: #00c8c8;
+    color: #fff;
+}
+#topNav ul li select{
+    background-color: transparent;
+    color: #858585;
+    border: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+#topNav ul li a{
+    color: #858585
+}
+#slider.carousel{
+    position: relative;
+}
+.btn.sliderBtn {
+	position: absolute;
+	z-index: 99;
+	border: 1px solid #737373;
+	text-transform: uppercase;
+}
+#eventTab ul{
+    padding-left: 0;
+}
+#eventTab ul li{
+    list-style: none;
+    display: inline;
+}
+#eventTab ul li a{
+    color: #737373;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+#eventTab ul li a:first-child{
+    padding-left: 0;
+}
+#productSection{}
+#productSection .product{
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+}
+#productSection .product:hover{
+    box-shadow: 3px 3px 5px 6px #efefef;
+}
+#productSection .product:hover .proinfo{
+    display: block;
+    position: absolute;
+    box-shadow: 3px 3px 5px 6px #efefef;
+    z-index: 99;
+    
+}
+#productSection .pricing {
+	position: absolute;
+	top: 7px;
+	left: 30px;
+    z-index: 1;
+    color: #9a9a9a;
+}
+
+#productSection .product img{
+    width: 100%;
+}
+.proinfo{
+    color: #9a9a9a;
+    padding: 30px;
+    display: none;
+    background-color: #fff;
+}
+.proinfo strong{
+    font-size: 13px;
+}
+.proinfo p{
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.proinfo span{
+    padding: 0px 5px;
+}
+.proinfo span a{
+    background-color: #9a9a9a;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 13px;
+}
+.proinfo span a:hover{
+    background-color: #00c8c8;
+}
+#lookBook .lookBox{
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+#lookBook .lookBox img{
+    width: 100%;
+}
+.lookbookInfo h5{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.lookbookInfo span {
+	font-size: 32px;
+	text-transform: uppercase;
+}
+.lookbookInfo p{
+    font-size: 15px;
+}
+.lookbookBtn{
+    text-transform: uppercase;
+    border: 1px solid #9a9a9a;
+    color: #9a9a9a;
+    font-size: 12px;
+    margin-top: 15px;
+}
+.lookbookBtn:hover{
+    background-color: #00c8c8;
+    color: #fff;
+    border: none;
+}
+#footerSection{
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+#footerSection h3{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #575153;
+}
+#footerSection ul{}
+#footerSection ul li a{
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #727272;
+}
+#footerSection .award{
+    background-color: #333333;
+    padding: 27px;
+}
+#footerSection .award h3{
+    font-size: 27px;
+    color: #fff;
+    
+ }
+#footerSection .socialLink{
+    background-color: #00c8c8;
+    padding: 47px;
+}
+#footerSection .socialLink .fa{
+    color: #fff;
+    padding: 0 20px;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+/* sinanav overrride */
+.sina-nav.navbar-fixed{
+    position: absolute;
+}
+.sina-nav.navbar-transparent {
+	background: none;
+}
+.sina-nav .sina-menu {
+	float: right;
+}
+.sina-nav.navbar-transparent .extension-nav > ul > li > a, .sina-nav.navbar-transparent .sina-menu > li > a {
+	color: #222;
+}
+.sina-nav.navbar-transparent .sina-menu > li > a:hover{
+    color: #00c8c8;
+}
+.sina-nav.navbar-transparent .extension-nav > ul > li > a:hover{
+    color: #00c8c8;
+
+}
+.sina-nav .sina-menu .mega-menu-col .sub-menu a:hover, .sina-nav .sina-menu .mega-menu-col .sub-menu a:focus {
+	color: #00c8c8;
+}
+/* bootstrap overrride */
+
+
+
+@media (min-width: 320px) { 
+    .btn.sliderBtn {
+        right: 41px;
+        bottom: 14px;
+        font-size: 8px;
+    }
+    .sina-nav.navbar-fixed {
+        position: unset;
+    }
+    #eventTab ul li a {
+        padding: 10px 6px;
+    }
+    .mt50 {
+        margin-top: 15px;
+    }
+    #topNav ul li {
+        padding: 19px 0px;
+    }
+    #topNav ul li:hover{
+        background-color: transparent;
+    }
+    .lookbookInfo {
+        padding: 12px;
+    }
+    #footerSection .award h3 {
+        font-size: 17px;
+    }
+    #footerSection .socialLink {
+        padding: 20px;
+    }
+    #footerSection .socialLink .fa {
+        padding: 0 16px;
+    }
+}
+
+
+@media (min-width: 576px) { 
+    #topNav ul li {
+        padding: 19px 5px;
+    }
+    .btn.sliderBtn {
+        right: 65px;
+        bottom: 34px;
+        font-size: 12px;
+    }
+    #eventTab ul li a {
+        padding: 10px 12px;
+    }
+    .lookbookInfo {
+        padding: 50px;
+    }
+
+}
+
+@media (min-width: 768px) { 
+    #topNav ul li {
+        padding: 19px 10px;
+    }
+    .btn.sliderBtn {
+        right: 112px;
+        bottom: 52px;
+        font-size: 13px;
+    }
+
+}
+
+@media (min-width: 992px) { 
+    .btn.sliderBtn {
+        right: 138px;
+        bottom: 80px;
+        font-size: 16px;
+    }
+    .lookbookInfo {
+        padding: 0px;
+    }
+    .lookbookInfo p {
+        font-size: 12px;
+    }
+    .lookbookInfo span {
+        font-size: 27px;
+    }
+    .lookbookInfo h5 {
+        font-size: 29px;
+    }
+    #footerSection .socialLink {
+        padding: 35px;
+    }
+
+ }
+
+@media (min-width: 1200px) { 
+    .btn.sliderBtn {
+        right: 165px;
+        bottom: 107px;
+        font-size: 16px;
+    }
+    
+}
+
+
+
+
+
